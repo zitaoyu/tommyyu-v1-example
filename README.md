@@ -1,3 +1,13 @@
+## Tailwind CSS
+
+
+### `npm install -D tailwindcss`
+### `npx tailwindcss init`
+https://tailwindcss.com/docs/installation
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
