@@ -76,8 +76,14 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
         )}
 
         {/* MOBILE MENU POPUP */}
-        {!isAboveSmallScreens && isMenuToggled && (
-          <div className="fixed right-0 bottom-0 h-full bg-blue w-[66%]">
+        {
+          <div
+            className={`fixed right-0 bottom-0 h-full bg-blue w-[66%] ease-in-out duration-500 ${
+              !isAboveSmallScreens && isMenuToggled
+                ? "translate-x-0"
+                : `translate-x-full`
+            } ease-in-out duration-500`}
+          >
             {/* CLOSE ICON */}
             <div className="flex justify-end p-12">
               <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
@@ -89,7 +95,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
               <LinksList />
             </div>
           </div>
-        )}
+        }
       </div>
     </nav>
   );

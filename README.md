@@ -1,12 +1,12 @@
 ## Tailwind CSS
 
-
 ### `npm install -D tailwindcss`
+
 ### `npx tailwindcss init`
+
+### `npx tailwindcss -i .\src\index.css -o .\public\output.css --watch`
+
 https://tailwindcss.com/docs/installation
-
-
-
 
 # Getting Started with Create React App
 
