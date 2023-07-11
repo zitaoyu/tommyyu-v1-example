@@ -48,7 +48,7 @@ const MySkills = () => {
             <img
               alt="skills"
               className=" z-10"
-              src="/assets/skills-image.png"
+              src={process.env.PUBLIC_URL + "/assets/skills-image.png"}
             />
           </div>
         </div>

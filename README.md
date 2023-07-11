@@ -2,6 +2,8 @@
 
 ### `npm install -D tailwindcss`
 
+Gibhub Page: https://zitaoyu.github.io/tommyyu-v1-example/
+
 ### `npx tailwindcss init`
 
 ### `npx tailwindcss -i .\src\index.css -o .\public\output.css --watch`

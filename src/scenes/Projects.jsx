@@ -34,7 +34,10 @@ const Project = ({ title }) => {
           streamline operations and maximize efficiency.
         </p>
       </div>
-      <img src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} />
+      <img
+        src={process.env.PUBLIC_URL + `/assets/${projectTitle}.jpeg`}
+        alt={projectTitle}
+      />
     </motion.div>
   );
 };
