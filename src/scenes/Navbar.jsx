@@ -51,19 +51,23 @@ const LinksList = ({ selectedPage, setSelectedPage }) => {
   );
 };
 
-const Navbar = ({ selectedPage, setSelectedPage }) => {
+const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   const isAboveSmallScreens = useMediaQuery("(min-width: 768px)");
+  const navbarBackground = isTopOfPage ? "" : "bg-red";
 
   return (
-    <nav className={`z-40 w-full fixed top-0 py-6`}>
+    <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
       <div className="flex items-center justify-between mx-auto w-5/6">
         <h4 className="font-playfair text-6xl font-bold">TY</h4>
 
         {isAboveSmallScreens ? (
           // DESKTOP NAV
           <div className="flex justify-between gap-16 font-opensans text-sm font-semibold">
-            <LinksList />
+            <LinksList
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
           </div>
         ) : (
           // MOBILE NAV
@@ -78,11 +82,13 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
         {/* MOBILE MENU POPUP */}
         {
           <div
-            className={`fixed right-0 bottom-0 h-full bg-blue w-[66%] ease-in-out duration-500 ${
+            className={`fixed right-0 bottom-0 h-full bg-blue w-[66%] ease-in-out duration-500 
+            ${
               !isAboveSmallScreens && isMenuToggled
                 ? "translate-x-0"
                 : `translate-x-full`
-            } ease-in-out duration-500`}
+            } 
+            ease-in-out duration-500`}
           >
             {/* CLOSE ICON */}
             <div className="flex justify-end p-12">
@@ -92,7 +98,10 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
             </div>
             {/* MENU ITEMS */}
             <div className="flex flex-col gap-10 ml-[33%] text-2xl text-deep-blue">
-              <LinksList />
+              <LinksList
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
             </div>
           </div>
         }
