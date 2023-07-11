@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/tommyyu-v1-example/static/css/main.a1e3504a.css",
-    "main.js": "/tommyyu-v1-example/static/js/main.79505ec9.js",
+    "main.js": "/tommyyu-v1-example/static/js/main.f1e84756.js",
     "static/media/brush.png": "/tommyyu-v1-example/static/media/brush.85c9bab5ba2d7dcae1e3.png",
     "index.html": "/tommyyu-v1-example/index.html",
     "main.a1e3504a.css.map": "/tommyyu-v1-example/static/css/main.a1e3504a.css.map",
-    "main.79505ec9.js.map": "/tommyyu-v1-example/static/js/main.79505ec9.js.map"
+    "main.f1e84756.js.map": "/tommyyu-v1-example/static/js/main.f1e84756.js.map"
   },
   "entrypoints": [
     "static/css/main.a1e3504a.css",
-    "static/js/main.79505ec9.js"
+    "static/js/main.f1e84756.js"
   ]
 }
